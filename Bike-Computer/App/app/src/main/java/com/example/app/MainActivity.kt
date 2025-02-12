@@ -38,6 +38,7 @@ class MainActivity : ComponentActivity() {
             NavHost(navController = navController, startDestination = "HomeScreen", builder = {
                 composable(route = "HomeScreen", content = { HomeScreen(navController = navController, devicesList = DEVICES_LIST) })
                 composable(route = "AllRPDevicesScreen", content = { AllRPDevicesScreen(navController = navController, devicesList = DEVICES_LIST) })
+                composable(route = "DisplayNotificationsScreen", content = { DisplayNotificationsScreen(navController = navController) })
             })
         }
     }
