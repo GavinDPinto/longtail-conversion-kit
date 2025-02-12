@@ -62,7 +62,7 @@ private fun Header(navController: NavController) {
                 color = Color.White,
                 fontSize = 28.sp,
                 modifier = Modifier
-                    .padding(start = 50.dp)
+                    .padding(start = 70.dp)
             )
         }
     }
