@@ -33,9 +33,23 @@ fun HomeScreen(devicesList: List<String>, navController: NavController) {
             )
 
             NotificationHubButton(navController)
+            ScanBLEDevicesButton(navController)
         }
 
         // Add Bluetooth Button Here
+    }
+}
+
+@Composable
+fun ScanBLEDevicesButton(navController: NavController = rememberNavController()) {
+    Button(
+        onClick = { navController.navigate("DeviceListScreen") },
+        modifier = Modifier.padding(top = 20.dp).height(100.dp).width(300.dp),
+    ) {
+        Text(
+            text = "Scan BLE Devices",
+            fontSize = 30.sp
+        )
     }
 }
 
